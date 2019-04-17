@@ -38,6 +38,7 @@ public class TestController {
     @DeleteMapping("/delete/{name}")
     public ResponseEntity AllCustomers(@PathVariable String name) {
         customerNames.remove(name);
+        //comment1
         return ResponseEntity.ok(customerNames);
     }
 }
